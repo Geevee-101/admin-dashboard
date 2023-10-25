@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Karla:wght@400;700&family=Libre+Baskerville&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-main">
+        <div class="sidebar">
+            <div class="sidebar-line">
+                <img src="./icons/view-dashboard.svg" width=40px alt="dashboard logo" class="sidebar-icon">
+                <h1>Dashboard</h1>
+            </div>
+            <div class="nav">
+                <div class="sidebar-line">
+                    <img src="./icons/home.svg" width=20px alt="dashboard logo" class="sidebar-icon">
+                    <a>Home</a>
+                </div>
+                <div class="sidebar-line">
+                    <img src="./icons/card-account-details-outline.svg" width=20px alt="home icon" class="sidebar-icon">
+                    <a>Profile</a>
+                </div>
+                <div class="sidebar-line">
+                    <img src="./icons/message-reply.svg" width=20px alt="message icon" class="sidebar-icon">
+                    <a>Messages</a>
+                </div>
+                <div class="sidebar-line">
+                    <img src="./icons/clock-time-three.svg" width=20px alt="history icon" class="sidebar-icon">
+                    <a>History</a>
+                </div>
+                <div class="sidebar-line">
+                    <img src="./icons/note-multiple.svg" width=20px alt="tasks icon" class="sidebar-icon">
+                    <a>Tasks</a>
+                </div>
+                <div class="sidebar-line">
+                    <img src="./icons/account-group.svg" width=20px alt="communities icon" class="sidebar-icon">
+                    <a>Communities</a>
+                </div>
+            </div>
+            <div class="setup">
+                <div class="sidebar-line">
+                    <img src="./icons/cog.svg" width=20px alt="settings icon" class="sidebar-icon">
+                    <a>Settings</a>
+                </div>
+                <div class="sidebar-line">
+                    <img src="./icons/help-box.svg" width=20px alt="support icon" class="sidebar-icon">
+                    <a>Support</a>
+                </div>
+                <div class="sidebar-line">
+                    <img src="./icons/shield-check.svg" width=20px alt="privacy icon" class="sidebar-icon">
+                    <a>Privacy</a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="topbar">
+                <div class="topbar-top">
+                    <div class="entry">
+                        <img src="./icons/magnify.svg" width=20px alt="search icon" class="search-icon">
+                        <input type="text" id="search_input" name="search_input" class="search-bar">
+                    </div>
+                    <div class="account">
+                        <img src="./icons/bell-ring-outline.svg" width=20px alt="bell icon">
+                        <img src="./avatars/image-daniel.jpg" width=40px alt="avatar icon" class="avatar">
+                        <h2>Morgan Oakley</h2>
+                    </div>
+                </div>
+                <div class="topbar-bottom">
+                    <div class="greet">
+                        <img src="./avatars/image-daniel.jpg" width=60px alt="avatar icon" class="avatar">
+                        <div class="greet-name">
+                            <p>Hi there,</p>
+                            <h1>Morgan Oakley (@morgan)</h1>
+                        </div>
+                    </div>
+                    <div class="quick-action">
+                        <button>New</button>
+                        <button>Upload</button>
+                        <button>Share</button>
+                    </div>
+                </div>
+            </div>
+            <div class="workspace">
+                <div class="projects">
+                    <h2>Your Projects</h2>
+                    <div class="projects-list">
+                        <div class="card">
+                            <div class="card-details">
+                                <h3>Super Cool Project</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <img src="./icons/star-plus-outline.svg" width=20px alt="star icon">
+                                <img src="./icons/lock-open-plus-outline.svg" width=20px alt="lock icon">
+                                <img src="./icons/share-variant-outline.svg" width=20px alt="share icon">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-details">
+                                <h3>Less Cool Project</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore 
+                                    et dolore magna aliqua. Quis nostrud exercitation 
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <img src="./icons/star-plus-outline.svg" width=20px alt="star icon">
+                                <img src="./icons/lock-open-plus-outline.svg" width=20px alt="lock icon">
+                                <img src="./icons/share-variant-outline.svg" width=20px alt="share icon">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-details">
+                                <h3>Impossible App</h3>
+                                <p>
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                    nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <img src="./icons/star-plus-outline.svg" width=20px alt="star icon">
+                                <img src="./icons/lock-open-plus-outline.svg" width=20px alt="lock icon">
+                                <img src="./icons/share-variant-outline.svg" width=20px alt="share icon">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-details">
+                                <h3>Easy Peasy App</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam.
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <img src="./icons/star-plus-outline.svg" width=20px alt="star icon">
+                                <img src="./icons/lock-open-plus-outline.svg" width=20px alt="lock icon">
+                                <img src="./icons/share-variant-outline.svg" width=20px alt="share icon">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-details">
+                                <h3>Ad Blocker</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <img src="./icons/star-plus-outline.svg" width=20px alt="star icon">
+                                <img src="./icons/lock-open-plus-outline.svg" width=20px alt="lock icon">
+                                <img src="./icons/share-variant-outline.svg" width=20px alt="share icon">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-details">
+                                <h3>Money Maker</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam.
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <img src="./icons/star-plus-outline.svg" width=20px alt="star icon">
+                                <img src="./icons/lock-open-plus-outline.svg" width=20px alt="lock icon">
+                                <img src="./icons/share-variant-outline.svg" width=20px alt="share icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="workspace-right">
+                    <div class="announcements">
+                        <h2>Announcements</h2>
+                        <div class="announcements-card">
+                            <div class="announcements-card-slip">
+                                <h4>Site Maintenance</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                            <div class="announcements-card-slip">
+                                <h4>Community Share Day</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                            <div class="announcements-card-slip slip-last">
+                                <h4>Update Privacy Policy</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending">
+                        <h2>Trending</h2>
+                        <div class="trending-card">
+                            <div class="trending-slip">
+                                <img src="./avatars/image-jeanette.jpg" width=40px alt="avatar icon" class="avatar">
+                                <div class="trending-slip-details">
+                                    <p>@tegan</p>
+                                    <p class="trending-detail-project">World Peace Builder</p>
+                                </div>
+                            </div>
+                            <div class="trending-slip">
+                                <img src="./avatars/image-daniel.jpg" width=40px alt="avatar icon" class="avatar">
+                                <div class="trending-slip-details">
+                                    <p>@morgan</p>
+                                    <p class="trending-detail-project">Super Cool Project</p>
+                                </div>
+                            </div>
+                            <div class="trending-slip">
+                                <img src="./avatars/image-jonathan.jpg" width=40px alt="avatar icon" class="avatar">
+                                <div class="trending-slip-details">
+                                    <p>@kendall</p>
+                                    <p class="trending-detail-project">Life Changing App</p>
+                                </div>
+                            </div>
+                            <div class="trending-slip slip-last">
+                                <img src="./avatars/image-kira.jpg" width=40px alt="avatar icon" class="avatar">
+                                <div class="trending-slip-details">
+                                    <p>@alex</p>
+                                    <p class="trending-detail-project">No Traffic Maker</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

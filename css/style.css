@@ -1,0 +1,249 @@
+:root {
+    --baby-blue: rgb(25, 146, 212);
+    --active-yellow: rgb(240, 180, 41);
+    --light-blue-grey: rgb(226, 232, 240);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 1.3rem;
+}
+h2 {
+    font-size: 1rem;
+}
+h3 {
+    font-size: 0.9rem;
+}
+h4 {
+    font-size: 0.8rem;
+}
+
+.container-main {
+    display: grid;
+    grid-template-areas: 
+    "sidebarArea contentArea"
+}
+
+.sidebar {
+    grid-area: sidebarArea;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    width: 200px;
+    background-color:var(--baby-blue);
+    color: white;
+}
+.sidebar-line {
+    display: grid;
+    align-items: center;
+    padding: 5px 0;
+    grid-template-columns: 1fr 3fr;
+}
+.sidebar-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: invert()
+}
+.nav {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 5px;
+}
+.setup {
+    display: grid;
+    grid-auto-flow: row;
+    padding-top: 25px;
+}
+
+.content {
+    display: grid;
+    grid-area: contentArea;
+    background-color: var(--light-blue-grey);
+    /*padding-bottom: 50px;*/
+    grid-template-areas:
+    "topbarArea"
+    "workArea";
+}
+
+.topbar {
+    grid-area: topbarArea;
+    background-color: white;
+    padding: 10px 40px 13px 40px;
+    box-shadow: 0 5px 5px lightgrey;
+    margin-bottom: 25px;
+}
+.topbar-top {
+    display: grid;
+    padding-bottom: 25px;
+    grid-template-areas: "entryArea entryArea entryArea entryArea emptryArea emptyArea accountArea";
+}
+.entry {
+    display: flex;
+    grid-area: entryArea;
+    padding: 10px 0;
+}
+.search-bar {
+    width: 100%;
+    border-radius: 15px;
+    padding-left: 10px;
+    border: none;
+    background-color: var(--light-blue-grey);
+}
+.search-icon {
+    padding-right: 10px;
+}
+.account {
+    display: grid;
+    grid-area: accountArea;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    justify-items: end;
+}
+.avatar {
+    border-radius: 100%; 
+}
+.topbar-bottom {
+    display: grid;
+    align-items: center;
+    grid-template-areas: "greetArea greetArea greetArea actionArea";
+}
+.greet {
+    grid-area: greetArea;
+    display: flex;
+    align-items: center;
+}
+.greet-name {
+    padding-left: 10px;
+}
+.quick-action {
+    grid-area: actionArea;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.quick-action button {
+    background-color: var(--baby-blue);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.workspace {
+    grid-area: workArea;
+    display: grid;
+    padding: 0 20px;
+    gap: 20px;
+    height: 700px;
+    grid-template-areas: 
+    "projectsArea projectsArea projectsArea workspaceRightArea"
+    "projectsArea projectsArea projectsArea workspaceRightArea";
+}
+.projects {
+    grid-area: projectsArea;
+}
+.projects h2 {
+    margin-bottom: 10px;
+}
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px 20px;
+}
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    height: 141px;
+    display: grid;
+    border-width: 0 0 0 10px;
+    border-style: solid;
+    border-color: var(--active-yellow);
+    grid-template-rows: 4fr 1fr;
+    box-shadow: 5px 5px 5px lightgrey;
+}
+.card p {
+    font-size: 0.9rem;
+    color: grey;
+}
+.card-action {
+    display: flex;
+    justify-content: end;
+    gap: 25px;
+}
+.workspace-right {
+    grid-area: workspaceRightArea;
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+    "announcementsArea"
+    "trendingArea";
+}
+.announcements {
+    grid-area: announcementsArea;
+}
+.announcements h2 {
+    margin-bottom: 10px;
+}
+
+.announcements p {
+    font-size: 0.7rem;
+    color: grey;
+}
+.announcements-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px; 
+    box-shadow: 5px 5px 5px lightgrey;
+}
+.announcements-card-slip {
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 20px;
+}
+.slip-last {
+    padding-bottom: 0;
+    border-bottom: 0;
+    margin-bottom: 0;    
+}
+.trending {
+    grid-area: trendingArea;
+}
+.trending h2 {
+    margin-bottom: 10px;
+}
+.trending-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px; 
+    box-shadow: 5px 5px 5px lightgrey;
+    display: grid;
+    gap: 20px;
+}
+.trending-slip {
+    display: flex;
+    align-items: center;
+}
+.trending-slip p {
+    font-size: 0.8rem;
+}
+.trending-slip-details {
+    display: grid;
+    padding-left: 15px;
+}
+.trending-detail-project {
+    color: grey;
+}
